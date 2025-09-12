@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Japheth Escalona — Virtual Assistant & IT Support</title>
+  <meta name="description" content="Japheth Escalona — Virtual Assistant, Data Capture Operator, and IT Support (SOC). Email/CRM management, Facebook management, Canva/Photoshop, SketchUp." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231A2A6C'/%3E%3Ctext x='50' y='57' font-size='42' text-anchor='middle' fill='%23fff' font-family='Arial, sans-serif'%3EJ%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{
+      --navy:#1A2A6C;
+      --teal:#00BFA6;
+      --muted:#9aa3c7;
+      --bg:#f6f8fc;
+      --card:#ffffff;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b1320;line-height:1.5}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{background:var(--navy);color:#fff;width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px}
+    nav a{margin-left:18px;color:var(--navy);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px;align-items:center}
+    .headline{background:linear-gradient(180deg, rgba(26,42,108,0.06), transparent);padding:28px;border-radius:12px}
+    h1{margin:0;font-size:28px;color:var(--navy)}
+    p.lead{color:var(--muted);margin-top:10px}
+    .cta{margin-top:18px;display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--navy);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(26,42,108,0.12);color:var(--navy)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{padding:6px 10px;border-radius:999px;border:1px solid rgba(10,20,40,0.06);font-weight:600;font-size:13px}
+
+    section{margin-top:28px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{padding:16px;border-radius:10px;border:1px solid rgba(10,20,40,0.04)}
+    .service h4{margin:6px 0 0}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .portfolio-item{height:120px;border-radius:8px;overflow:hidden;background-size:cover;background-position:center;position:relative}
+    .portfolio-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(10,20,40,0.5));display:flex;align-items:flex-end;padding:10px;color:#fff;font-weight:700}
+
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px;padding:14px}
+
+    /* Contact form */
+    form label{display:block;font-size:13px;margin-bottom:6px}
+    form input,form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(10,20,40,0.08);margin-bottom:10px}
+    form .row{display:flex;gap:8px}
+    form .row input{flex:1}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .portfolio-grid{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">J</div>
+        <div>
+          <div style="font-weight:800;color:var(--navy)">Japheth Escalona</div>
+          <div style="font-size:13px;color:var(--muted)">Virtual Assistant • IT Support (SOC)</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="headline card">
+          <h1>Virtual Assistant & IT Support — Reliable, Detail‑Oriented, Professional</h1>
+          <p class="lead">I help businesses and professionals save time and stay secure. Email & CRM management, social media support, data capture, and cybersecurity monitoring.</p>
+          <div class="skills">
+            <div class="skill">Email & CRM</div>
+            <div class="skill">Facebook Management</div>
+            <div class="skill">Canva • Photoshop</div>
+            <div class="skill">SketchUp</div>
+            <div class="skill">Data Capture</div>
+            <div class="skill">SOC — Malware & Phishing Protection</div>
+          </div>
+          <div class="cta">
+            <button class="btn btn-primary" onclick="scrollToSection('contact')">Hire Me</button>
+            <a class="btn btn-ghost" href="#portfolio">View Work</a>
+          </div>
+        </div>
+
+        <aside class="card">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div>
+              <strong>Experience</strong>
+              <div style="color:var(--muted);font-size:13px">1+ year — Digital Marketing VA • Data Capture • IT Support (SOC)</div>
+            </div>
+            <div>
+              <strong>Location</strong>
+              <div style="color:var(--muted);font-size:13px">Philippines</div>
+            </div>
+            <div>
+              <strong>Availability</strong>
+              <div style="color:var(--muted);font-size:13px">Remote / Part-time / Full-time</div>
+            </div>
+            <div>
+              <strong>Contact</strong>
+              <div style="color:var(--muted);font-size:13px">hello@your-email.com</div>
+            </div>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <a class="btn btn-ghost" href="#contact">Message</a>
+              <a class="btn btn-ghost" href="#" onclick="downloadResume()">Download CV</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h3>About Me</h3>
+          <p style="color:var(--muted)">I’m Japheth — a Virtual Assistant and IT Support professional. I combine administrative efficiency with technical vigilance: managing emails and CRMs, running Facebook pages, producing simple visuals, capturing and validating client data, and monitoring systems against malware, ransomware, and phishing attempts.</p>
+        </div>
+      </section>
+
+      <section id="services">
+        <h3>Services</h3>
+        <div class="grid-3">
+          <div class="service card">
+            <h4>Virtual Assistance</h4>
+            <p style="color:var(--muted);font-size:14px">Email management, calendar coordination, data entry, client communication, and CRM updates.</p>
+          </div>
+          <div class="service card">
+            <h4>Social Media Support</h4>
+            <p style="color:var(--muted);font-size:14px">Facebook page management, basic content creation with Canva/Photoshop, scheduling posts.</p>
+          </div>
+          <div class="service card">
+            <h4>IT Support (SOC)</h4>
+            <p style="color:var(--muted);font-size:14px">Monitoring and responding to malware/phishing alerts, basic endpoint security practices, and threat reporting using CRM-based detection tools.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h3>Portfolio / Samples</h3>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=800&q=60')">
+            <div class="portfolio-overlay">Facebook Content Calendar</div>
+          </div>
+          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1581091012184-7c2a9f074a2a?auto=format&fit=crop&w=800&q=60')">
+            <div class="portfolio-overlay">Data Capture Workflow</div>
+          </div>
+          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?auto=format&fit=crop&w=800&q=60')">
+            <div class="portfolio-overlay">SOC Incident Report (sample)</div>
+          </div>
+          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60')">
+            <div class="portfolio-overlay">Canva Visuals</div>
+          </div>
+          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=800&q=60')">
+            <div class="portfolio-overlay">SketchUp Model (render)</div>
+          </div>
+          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60')">
+            <div class="portfolio-overlay">Client Dashboard (mock)</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h3>Testimonials</h3>
+        <div class="grid-3">
+          <div class="card">"Dependable and detail-oriented — helped streamline our CRM." <div style="color:var(--muted);font-size:13px;margin-top:8px">— Client A</div></div>
+          <div class="card">"Quick to respond and resolved security alerts efficiently." <div style="color:var(--muted);font-size:13px;margin-top:8px">— Client B</div></div>
+          <div class="card">"Great visuals for our social posts — clean and on-brand." <div style="color:var(--muted);font-size:13px;margin-top:8px">— Client C</div></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="card">
+          <p style="color:var(--muted)">Ready to collaborate? Send a message and I’ll reply within 24–48 hours.</p>
+          <form id="contactForm" onsubmit="handleContact(event)">
+            <label for="name">Name</label>
+            <input id="name" name="name" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <div id="formStatus" style="color:var(--muted);font-size:13px"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> Japheth Escalona — Virtual Assistant & IT Support · Built with ❤️
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function scrollToSection(id){
+      document.getElementById(id).scrollIntoView({behavior:'smooth'});
+    }
+
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+      if(!name||!email||!msg){status.textContent='Please complete all fields.';return}
+      // Fallback: open mail client with prefilled content
+      const subject = encodeURIComponent('Website inquiry from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + msg);
+      window.location.href = 'mailto:hello@your-email.com?subject=' + subject + '&body=' + body;
+      status.textContent = 'Opening your mail client...';
+    }
+
+    function downloadResume(){
+      // Replace with your actual resume file path if hosted
+      const url = 'resume.pdf';
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Japheth_Escalona_CV.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+  </script>
+</body>
+</html>
