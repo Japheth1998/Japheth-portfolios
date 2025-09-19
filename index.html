@@ -150,29 +150,60 @@
         </div>
       </section>
 
-      <section id="portfolio">
-        <h3>Portfolio / Samples</h3>
-        <div class="portfolio-grid">
-          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=800&q=60')">
-            <div class="portfolio-overlay">Facebook Content Calendar</div>
-          </div>
-          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1581091012184-7c2a9f074a2a?auto=format&fit=crop&w=800&q=60')">
-            <div class="portfolio-overlay">Data Capture Workflow</div>
-          </div>
-          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?auto=format&fit=crop&w=800&q=60')">
-            <div class="portfolio-overlay">SOC Incident Report (sample)</div>
-          </div>
-          <div class="portfolio-item" style="background-image:url('CANVA VISUALS.png')">
-            <div class="portfolio-overlay">Canva Visuals</div>
-          </div>
-          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=800&q=60')">
-            <div class="portfolio-overlay">SketchUp Model (render)</div>
-          </div>
-          <div class="portfolio-item" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=60')">
-            <div class="portfolio-overlay">Client Dashboard (mock)</div>
-          </div>
+      <!-- Portfolio Section -->
+<section id="portfolio" class="py-16 bg-gray-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Portfolio Samples</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item cursor-pointer relative h-64 bg-cover bg-center rounded-lg shadow-lg" 
+           style="background-image:url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=800&q=60')" 
+           onclick="openModal('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=800&q=60')">
+        <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white font-semibold opacity-0 hover:opacity-100 transition">
+          Facebook Content Calendar
         </div>
-      </section>
+      </div>
+
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item cursor-pointer relative h-64 bg-cover bg-center rounded-lg shadow-lg" 
+           style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60')" 
+           onclick="openModal('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80')">
+        <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white font-semibold opacity-0 hover:opacity-100 transition">
+          Sample Work 2
+        </div>
+      </div>
+
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio-item cursor-pointer relative h-64 bg-cover bg-center rounded-lg shadow-lg" 
+           style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=60')" 
+           onclick="openModal('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80')">
+        <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white font-semibold opacity-0 hover:opacity-100 transition">
+          Sample Work 3
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="hidden fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
+  <span class="absolute top-6 right-8 text-white text-4xl cursor-pointer" onclick="closeModal()">&times;</span>
+  <img id="modalImage" src="" class="max-w-3xl w-full rounded-lg shadow-2xl border-4 border-white">
+</div>
+
+<!-- Modal Script -->
+<script>
+  function openModal(imgSrc) {
+    document.getElementById('modalImage').src = imgSrc;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+  function closeModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
 
       <section id="testimonials">
         <h3>Testimonials</h3>
@@ -257,6 +288,7 @@
   </script>
 </body>
 </html>
+
 
 
 
